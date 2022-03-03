@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 7px;
+}
+
+label, p, hr{
+    padding: 0 .3em;
+    margin-bottom: .5em;
+    color: white;
+}
+
+input, select{
+    padding: 1em;
+    border-radius: .5em;
+    font-size: .9em;
+   
+}
+
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+    
+    
+}
+
+.fondo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('https://i.ibb.co/NWT5k8q/statrup.jpg');
+    background-size: cover;
+    background-attachment: fixed; 
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    transition: all 500ms ease-in-out;
+}
+
+.header{
+    margin: 2em 0 1em 0;
+    padding: 2em;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.description{
+    font-style: italic;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.survey-form{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.616);
+    border-radius: 10px;
+    padding: 3em;
+    transition: all 500ms ease-in-out;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+    margin-bottom: 1.5em;
+}
+
+
+.form-control{
+    background-color: solid rgb(248, 246, 246);
+}
+
+.input-textarea{
+    padding: .5em;
+    font-size: 1.5em;
+    width: 100%;
+    height: 130px;
+}
+
+.submit-button{
+    color: white;
+    background-color: rgb(9, 189, 9);
+    border-radius: .2em;
+    width: 100%;
+    padding: .9em;
+    font-size: 1.2em;
+    cursor: pointer;
+    border:none;
+    transition: all 300ms ease-in-out;
+}
+
+.submit-button:hover{
+    color: rgb(9, 189, 9);
+    background-color: white;
+}
+
+.clue{
+    font-size: 12px;
+}
+
+input.input-checkbox, input.input-radio{
+    margin-right: 15px;
+}
+
+
+@media (max-width:950px){
+    .container{
+        width: 90%;
+    }
+}
+@media (max-width:500px){
+   .title{
+       font-size: 1.8em;
+   }
+
+   .description{
+       font-size: .8em;
+   }
+    .container{
+        width: 100%;
+    }
+    .header{
+        margin: 1em 0 .5em 0;
+        padding: 1em;
+    }
+
+    .survey-form{
+        padding: 1em;
+    }
+    .form-group .form-control{
+        flex: 1 1 0;
+    }
+}
+
+
+
+
+
